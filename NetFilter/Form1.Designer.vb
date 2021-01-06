@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,22 +20,22 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.sitetxt = New System.Windows.Forms.TextBox()
-        Me.USRTXT1 = New System.Windows.Forms.Label()
-        Me.ADDBTN = New System.Windows.Forms.Button()
-        Me.RELEASEBTN = New System.Windows.Forms.Button()
-        Me.USRTXT2 = New System.Windows.Forms.Label()
-        Me.USRTXT3 = New System.Windows.Forms.Label()
-        Me.USRTXT4 = New System.Windows.Forms.Label()
-        Me.APPLYBTN = New System.Windows.Forms.Button()
+        Me.INFO_GEN_2 = New System.Windows.Forms.Label()
+        Me.APPEND = New System.Windows.Forms.Button()
+        Me.UNBLOCK = New System.Windows.Forms.Button()
+        Me.PGNAME = New System.Windows.Forms.Label()
+        Me.VERSTR = New System.Windows.Forms.Label()
+        Me.INFO_GEN_1 = New System.Windows.Forms.Label()
+        Me.APPLY = New System.Windows.Forms.Button()
         Me.Bar = New System.Windows.Forms.Label()
-        Me.QUITBTN = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.MODIFYTXT = New System.Windows.Forms.Label()
-        Me.SAVEDTXT = New System.Windows.Forms.Label()
+        Me.QUIT = New System.Windows.Forms.Button()
+        Me.INFO_WARN_1 = New System.Windows.Forms.Label()
+        Me.EDITING = New System.Windows.Forms.Label()
+        Me.APPLIED = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -55,78 +55,78 @@ Partial Class Form1
         Me.sitetxt.Size = New System.Drawing.Size(324, 21)
         Me.sitetxt.TabIndex = 1
         '
-        'USRTXT1
+        'INFO_GEN_2
         '
-        Me.USRTXT1.AutoSize = True
-        Me.USRTXT1.Font = New System.Drawing.Font("Gulim", 9.0!)
-        Me.USRTXT1.Location = New System.Drawing.Point(13, 91)
-        Me.USRTXT1.Name = "USRTXT1"
-        Me.USRTXT1.Size = New System.Drawing.Size(767, 12)
-        Me.USRTXT1.TabIndex = 2
-        Me.USRTXT1.Text = "차단할 사이트를 입력해주세요 (예시 : www.youtube.com, 주의 : 유효하지 않은 사이트 주소를 입력하여 생기는 피해는 책임지지 않습니" &
+        Me.INFO_GEN_2.AutoSize = True
+        Me.INFO_GEN_2.Font = New System.Drawing.Font("굴림", 9.0!)
+        Me.INFO_GEN_2.Location = New System.Drawing.Point(13, 91)
+        Me.INFO_GEN_2.Name = "INFO_GEN_2"
+        Me.INFO_GEN_2.Size = New System.Drawing.Size(767, 12)
+        Me.INFO_GEN_2.TabIndex = 2
+        Me.INFO_GEN_2.Text = "차단할 사이트를 입력해주세요 (예시 : www.youtube.com, 주의 : 유효하지 않은 사이트 주소를 입력하여 생기는 피해는 책임지지 않습니" &
     "다.)"
         '
-        'ADDBTN
+        'APPEND
         '
-        Me.ADDBTN.Location = New System.Drawing.Point(345, 105)
-        Me.ADDBTN.Name = "ADDBTN"
-        Me.ADDBTN.Size = New System.Drawing.Size(75, 23)
-        Me.ADDBTN.TabIndex = 3
-        Me.ADDBTN.Text = "추가"
-        Me.ADDBTN.UseVisualStyleBackColor = True
+        Me.APPEND.Location = New System.Drawing.Point(345, 105)
+        Me.APPEND.Name = "APPEND"
+        Me.APPEND.Size = New System.Drawing.Size(75, 23)
+        Me.APPEND.TabIndex = 3
+        Me.APPEND.Text = "추가"
+        Me.APPEND.UseVisualStyleBackColor = True
         '
-        'RELEASEBTN
+        'UNBLOCK
         '
-        Me.RELEASEBTN.Location = New System.Drawing.Point(619, 105)
-        Me.RELEASEBTN.Name = "RELEASEBTN"
-        Me.RELEASEBTN.Size = New System.Drawing.Size(169, 23)
-        Me.RELEASEBTN.TabIndex = 4
-        Me.RELEASEBTN.Text = "선택한 사이트 차단 해제"
-        Me.RELEASEBTN.UseVisualStyleBackColor = True
+        Me.UNBLOCK.Location = New System.Drawing.Point(619, 105)
+        Me.UNBLOCK.Name = "UNBLOCK"
+        Me.UNBLOCK.Size = New System.Drawing.Size(169, 23)
+        Me.UNBLOCK.TabIndex = 4
+        Me.UNBLOCK.Text = "선택한 사이트 차단 해제"
+        Me.UNBLOCK.UseVisualStyleBackColor = True
         '
-        'USRTXT2
+        'PGNAME
         '
-        Me.USRTXT2.AutoSize = True
-        Me.USRTXT2.Font = New System.Drawing.Font("Gulim", 32.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.USRTXT2.Location = New System.Drawing.Point(12, 38)
-        Me.USRTXT2.Name = "USRTXT2"
-        Me.USRTXT2.Size = New System.Drawing.Size(252, 43)
-        Me.USRTXT2.TabIndex = 5
-        Me.USRTXT2.Text = "NETFILTER"
+        Me.PGNAME.AutoSize = True
+        Me.PGNAME.Font = New System.Drawing.Font("굴림", 32.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.PGNAME.Location = New System.Drawing.Point(12, 38)
+        Me.PGNAME.Name = "PGNAME"
+        Me.PGNAME.Size = New System.Drawing.Size(252, 43)
+        Me.PGNAME.TabIndex = 5
+        Me.PGNAME.Text = "NETFILTER"
         '
-        'USRTXT3
+        'VERSTR
         '
-        Me.USRTXT3.AutoSize = True
-        Me.USRTXT3.Font = New System.Drawing.Font("Gulim", 15.0!)
-        Me.USRTXT3.Location = New System.Drawing.Point(270, 61)
-        Me.USRTXT3.Name = "USRTXT3"
-        Me.USRTXT3.Size = New System.Drawing.Size(51, 20)
-        Me.USRTXT3.TabIndex = 6
-        Me.USRTXT3.Text = "V0.2"
+        Me.VERSTR.AutoSize = True
+        Me.VERSTR.Font = New System.Drawing.Font("굴림", 15.0!)
+        Me.VERSTR.Location = New System.Drawing.Point(270, 61)
+        Me.VERSTR.Name = "VERSTR"
+        Me.VERSTR.Size = New System.Drawing.Size(51, 20)
+        Me.VERSTR.TabIndex = 6
+        Me.VERSTR.Text = "Vx.x"
         '
-        'USRTXT4
+        'INFO_GEN_1
         '
-        Me.USRTXT4.AutoSize = True
-        Me.USRTXT4.Location = New System.Drawing.Point(343, 38)
-        Me.USRTXT4.Name = "USRTXT4"
-        Me.USRTXT4.Size = New System.Drawing.Size(373, 24)
-        Me.USRTXT4.TabIndex = 7
-        Me.USRTXT4.Text = "시스템 파일 수정 방식으로 프로그램을 종료해도 차단이 유지됩니다." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "차단내용을 적용시킨 뒤에는 브라우저 등을 재시작해주세요"
+        Me.INFO_GEN_1.AutoSize = True
+        Me.INFO_GEN_1.Location = New System.Drawing.Point(343, 38)
+        Me.INFO_GEN_1.Name = "INFO_GEN_1"
+        Me.INFO_GEN_1.Size = New System.Drawing.Size(373, 24)
+        Me.INFO_GEN_1.TabIndex = 7
+        Me.INFO_GEN_1.Text = "시스템 파일 수정 방식으로 프로그램을 종료해도 차단이 유지됩니다." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "차단내용을 적용시킨 뒤에는 브라우저 등을 재시작해주세요"
         '
-        'APPLYBTN
+        'APPLY
         '
-        Me.APPLYBTN.Location = New System.Drawing.Point(426, 105)
-        Me.APPLYBTN.Name = "APPLYBTN"
-        Me.APPLYBTN.Size = New System.Drawing.Size(75, 23)
-        Me.APPLYBTN.TabIndex = 8
-        Me.APPLYBTN.Text = "적용"
-        Me.APPLYBTN.UseVisualStyleBackColor = True
+        Me.APPLY.Location = New System.Drawing.Point(426, 105)
+        Me.APPLY.Name = "APPLY"
+        Me.APPLY.Size = New System.Drawing.Size(75, 23)
+        Me.APPLY.TabIndex = 8
+        Me.APPLY.Text = "적용"
+        Me.APPLY.UseVisualStyleBackColor = True
         '
         'Bar
         '
         Me.Bar.AutoSize = True
         Me.Bar.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Bar.Font = New System.Drawing.Font("Gulim", 15.0!)
+        Me.Bar.Font = New System.Drawing.Font("굴림", 15.0!)
         Me.Bar.Location = New System.Drawing.Point(0, 0)
         Me.Bar.Name = "Bar"
         Me.Bar.Size = New System.Drawing.Size(800, 20)
@@ -134,72 +134,73 @@ Partial Class Form1
         Me.Bar.Text = "                                                                                 " &
     "                                "
         '
-        'QUITBTN
+        'QUIT
         '
-        Me.QUITBTN.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.QUITBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.QUITBTN.Location = New System.Drawing.Point(713, 65)
-        Me.QUITBTN.Name = "QUITBTN"
-        Me.QUITBTN.Size = New System.Drawing.Size(75, 23)
-        Me.QUITBTN.TabIndex = 11
-        Me.QUITBTN.Text = "종료"
-        Me.QUITBTN.UseVisualStyleBackColor = False
+        Me.QUIT.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.QUIT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.QUIT.Location = New System.Drawing.Point(713, 65)
+        Me.QUIT.Name = "QUIT"
+        Me.QUIT.Size = New System.Drawing.Size(75, 23)
+        Me.QUIT.TabIndex = 11
+        Me.QUIT.Text = "종료"
+        Me.QUIT.UseVisualStyleBackColor = False
         '
-        'Label1
+        'INFO_WARN_1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Gulim", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(456, 70)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(251, 12)
-        Me.Label1.TabIndex = 12
-        Me.Label1.Text = "반드시 적용 버튼을 누른 뒤 종료해주세요"
+        Me.INFO_WARN_1.AutoSize = True
+        Me.INFO_WARN_1.Font = New System.Drawing.Font("굴림", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.INFO_WARN_1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.INFO_WARN_1.Location = New System.Drawing.Point(456, 70)
+        Me.INFO_WARN_1.Name = "INFO_WARN_1"
+        Me.INFO_WARN_1.Size = New System.Drawing.Size(251, 12)
+        Me.INFO_WARN_1.TabIndex = 12
+        Me.INFO_WARN_1.Text = "반드시 적용 버튼을 누른 뒤 종료해주세요"
         '
-        'MODIFYTXT
+        'EDITING
         '
-        Me.MODIFYTXT.AutoSize = True
-        Me.MODIFYTXT.Font = New System.Drawing.Font("Gulim", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.MODIFYTXT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MODIFYTXT.Location = New System.Drawing.Point(507, 110)
-        Me.MODIFYTXT.Name = "MODIFYTXT"
-        Me.MODIFYTXT.Size = New System.Drawing.Size(44, 12)
-        Me.MODIFYTXT.TabIndex = 13
-        Me.MODIFYTXT.Text = "수정중"
+        Me.EDITING.AutoSize = True
+        Me.EDITING.Font = New System.Drawing.Font("굴림", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.EDITING.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.EDITING.Location = New System.Drawing.Point(507, 110)
+        Me.EDITING.Name = "EDITING"
+        Me.EDITING.Size = New System.Drawing.Size(44, 12)
+        Me.EDITING.TabIndex = 13
+        Me.EDITING.Text = "수정중"
         '
-        'SAVEDTXT
+        'APPLIED
         '
-        Me.SAVEDTXT.AutoSize = True
-        Me.SAVEDTXT.Font = New System.Drawing.Font("Gulim", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.SAVEDTXT.ForeColor = System.Drawing.Color.Lime
-        Me.SAVEDTXT.Location = New System.Drawing.Point(557, 110)
-        Me.SAVEDTXT.Name = "SAVEDTXT"
-        Me.SAVEDTXT.Size = New System.Drawing.Size(44, 12)
-        Me.SAVEDTXT.TabIndex = 14
-        Me.SAVEDTXT.Text = "적용됨"
+        Me.APPLIED.AutoSize = True
+        Me.APPLIED.Font = New System.Drawing.Font("굴림", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.APPLIED.ForeColor = System.Drawing.Color.Lime
+        Me.APPLIED.Location = New System.Drawing.Point(557, 110)
+        Me.APPLIED.Name = "APPLIED"
+        Me.APPLIED.Size = New System.Drawing.Size(44, 12)
+        Me.APPLIED.TabIndex = 14
+        Me.APPLIED.Text = "적용됨"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 522)
-        Me.Controls.Add(Me.SAVEDTXT)
-        Me.Controls.Add(Me.MODIFYTXT)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.QUITBTN)
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.ClientSize = New System.Drawing.Size(800, 523)
+        Me.Controls.Add(Me.APPLIED)
+        Me.Controls.Add(Me.EDITING)
+        Me.Controls.Add(Me.INFO_WARN_1)
+        Me.Controls.Add(Me.QUIT)
         Me.Controls.Add(Me.Bar)
-        Me.Controls.Add(Me.APPLYBTN)
-        Me.Controls.Add(Me.USRTXT4)
-        Me.Controls.Add(Me.USRTXT3)
-        Me.Controls.Add(Me.USRTXT2)
-        Me.Controls.Add(Me.RELEASEBTN)
-        Me.Controls.Add(Me.ADDBTN)
-        Me.Controls.Add(Me.USRTXT1)
+        Me.Controls.Add(Me.APPLY)
+        Me.Controls.Add(Me.INFO_GEN_1)
+        Me.Controls.Add(Me.VERSTR)
+        Me.Controls.Add(Me.PGNAME)
+        Me.Controls.Add(Me.UNBLOCK)
+        Me.Controls.Add(Me.APPEND)
+        Me.Controls.Add(Me.INFO_GEN_2)
         Me.Controls.Add(Me.sitetxt)
         Me.Controls.Add(Me.ListBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "NETFILTER"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -207,16 +208,16 @@ Partial Class Form1
 
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents sitetxt As TextBox
-    Friend WithEvents USRTXT1 As Label
-    Friend WithEvents ADDBTN As Button
-    Friend WithEvents RELEASEBTN As Button
-    Friend WithEvents USRTXT2 As Label
-    Friend WithEvents USRTXT3 As Label
-    Friend WithEvents USRTXT4 As Label
-    Friend WithEvents APPLYBTN As Button
+    Friend WithEvents INFO_GEN_2 As Label
+    Friend WithEvents APPEND As Button
+    Friend WithEvents UNBLOCK As Button
+    Friend WithEvents PGNAME As Label
+    Friend WithEvents VERSTR As Label
+    Friend WithEvents INFO_GEN_1 As Label
+    Friend WithEvents APPLY As Button
     Friend WithEvents Bar As Label
-    Friend WithEvents QUITBTN As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents MODIFYTXT As Label
-    Friend WithEvents SAVEDTXT As Label
+    Friend WithEvents QUIT As Button
+    Friend WithEvents INFO_WARN_1 As Label
+    Friend WithEvents EDITING As Label
+    Friend WithEvents APPLIED As Label
 End Class
