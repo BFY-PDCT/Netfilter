@@ -21,6 +21,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
   build:
+    needs: test
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
@@ -32,15 +33,14 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build
-    - name: Compress
-      run: Compress-Archive -Path "D:\a\Netfilter\Netfilter\NetFilter\bin\Debug\net5.0-windows" -DestinationPath ("D:\a\buildres.zip")
-    - name: Archive build result
+    - name: Archive and Upload build result
       uses: actions/upload-artifact@v2
       with:
         name: build-result
-        path: D:\a\buildres.zip
+        path: D:\a\Netfilter\Netfilter\NetFilter\bin\Debug\net5.0-windows
         
   publish:
+    needs: test
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
