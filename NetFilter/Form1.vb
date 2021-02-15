@@ -1,4 +1,5 @@
 ﻿Imports System.Globalization
+Imports System.Windows.Forms
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -36,7 +37,7 @@ Public Class Form1
         Dim readlist As ListBox.ObjectCollection
         Dim fileReader As String
         fileReader = My.Computer.FileSystem.ReadAllText("C:\Windows\System32\drivers\etc\hosts")
-        Dim fileSplit() As String = Split(fileReader, vbNewLine)
+        Dim fileSplit() As String = Split(fileReader, vbCrLf)
         Dim reset As Boolean = False
 
         If fileSplit.Length > 0 And Not (fileSplit(0) = "# Copyright (c) 2019-2021 BFY") Then
@@ -54,7 +55,7 @@ Public Class Form1
         End If
 
         If reset = True Then
-            Dim towrite As String = "# Copyright (c) 2019-2021 BFY" + vbNewLine + "# This file is Generated Automatically by NetFilter" + vbNewLine + "# DO NOT MODIFY THIS FILE if you don't know what you are doing." + vbNewLine + "# Modifying this file incorrectly can cause problem to system and BFY NetFilter."
+            Dim towrite As String = "# Copyright (c) 2019-2021 BFY" + vbCrLf + "# This file is Generated Automatically by NetFilter" + vbCrLf + "# DO NOT MODIFY THIS FILE if you don't know what you are doing." + vbCrLf + "# Modifying this file incorrectly can cause problem to system and BFY NetFilter."
             My.Computer.FileSystem.WriteAllText("C:\Windows\System32\drivers\etc\hosts", towrite, False)
         End If
 
@@ -87,7 +88,7 @@ Public Class Form1
 
         If reset = True Then
             readlist.Clear()
-            Dim towrite As String = "# Copyright (c) 2019-2021 BFY" + vbNewLine + "# This file is Generated Automatically by NetFilter" + vbNewLine + "# DO NOT MODIFY THIS FILE if you don't know what you are doing." + vbNewLine + "# Modifying this file incorrectly can cause problem to system and BFY NetFilter."
+            Dim towrite As String = "# Copyright (c) 2019-2021 BFY" + vbCrLf + "# This file is Generated Automatically by NetFilter" + vbCrLf + "# DO NOT MODIFY THIS FILE if you don't know what you are doing." + vbCrLf + "# Modifying this file incorrectly can cause problem to system and BFY NetFilter."
             My.Computer.FileSystem.WriteAllText("C:\Windows\System32\drivers\etc\hosts", towrite, False)
         End If
 
@@ -132,10 +133,10 @@ Public Class Form1
     Private Sub APPLY_Click(sender As Object, e As EventArgs) Handles APPLY.Click
         Dim i As Long = 0
         Dim towrite As String
-        towrite = "# Copyright (c) 2019-2021 BFY" + vbNewLine + "# This file is Generated Automatically by NetFilter" + vbNewLine + "# DO NOT MODIFY THIS FILE if you don't know what you are doing." + vbNewLine + "# Modifying this file incorrectly can cause problem to system and BFY NetFilter."
+        towrite = "# Copyright (c) 2019-2021 BFY" + vbCrLf + "# This file is Generated Automatically by NetFilter" + vbCrLf + "# DO NOT MODIFY THIS FILE if you don't know what you are doing." + vbCrLf + "# Modifying this file incorrectly can cause problem to system and BFY NetFilter."
         My.Computer.FileSystem.WriteAllText("C:\Windows\System32\drivers\etc\hosts", towrite, False)
         For i = 0 To ListBox1.Items.Count - 1
-            towrite = vbNewLine + "127.0.0.1 " + ListBox1.Items(i).ToString()
+            towrite = vbCrLf + "127.0.0.1 " + ListBox1.Items(i).ToString()
             My.Computer.FileSystem.WriteAllText("C:\Windows\System32\drivers\etc\hosts", towrite, True)
         Next
         EDITING.Visible = False
