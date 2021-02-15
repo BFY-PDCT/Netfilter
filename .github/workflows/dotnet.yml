@@ -1,4 +1,4 @@
-name: .NET
+name: .NET Core
 
 on:
   push:
@@ -28,3 +28,12 @@ jobs:
       with:
         PROJECT_FILE_PATH: Netfilter\Netfilter.vbproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}} 
+    - name: build for windows
+      run: 
+        dotnet build
+        Compress-Archive -Path "D:\a\Netfilter\NetFilter\bin\Debug\net5.0-windows" -DestinationPath ("D:\a\buildres.zip")
+    - name: Archive build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: build-result
+        path: D:\a\buildres.zip
