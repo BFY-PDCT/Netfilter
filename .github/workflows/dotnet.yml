@@ -43,14 +43,3 @@ jobs:
       with:
         name: NetFilter
         path: D:\a\Netfilter\Netfilter\NetFilter\bin\Debug\net5.0-windows\NetFilter.exe
-        
-  publish:
-    needs: test
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v2
-#    - name: Publish
-#      uses: brandedoutcast/publish-nuget@v2.5.2
-#      with:
-#        PROJECT_FILE_PATH: Netfilter\Netfilter.vbproj
-#        NUGET_KEY: ${{secrets.NUGET_API_KEY}} 
