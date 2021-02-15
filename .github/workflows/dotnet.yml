@@ -38,6 +38,11 @@ jobs:
       with:
         name: build-result
         path: D:\a\Netfilter\Netfilter\NetFilter\bin\Debug\net5.0-windows
+    - name: Archive and Upload binary
+      uses: actions/upload-artifact@v2
+      with:
+        name: NetFilter
+        path: D:\a\Netfilter\Netfilter\NetFilter\bin\Debug\net5.0-windows\NetFilter.exe
         
   publish:
     needs: test
