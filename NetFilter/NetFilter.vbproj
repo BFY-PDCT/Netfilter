@@ -49,7 +49,11 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
+    <Version>1.0</Version>
     <TargetZone>LocalIntranet</TargetZone>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/BFY-PDCT/Netfilter.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="System.Drawing" />
@@ -90,6 +94,9 @@
     <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
     </None>
   </ItemGroup>
   <ItemGroup>
